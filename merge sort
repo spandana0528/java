@@ -1,15 +1,10 @@
 public class merge {
 public static void mergeSort(int res[], int low, int high) {
-		if (low < high) {
-
-			int middle = (low + high) / 2;
-
-
-			mergeSort(res, low, middle);
-			mergeSort(res, middle + 1, high);
-
-
-			merge(res, low, middle, high);
+if (low < high) {
+int middle = (low + high) / 2;
+mergeSort(res, low, middle);
+mergeSort(res, middle + 1, high);
+merge(res, low, middle, high);
 		}
 	}
 	public static void merge(int[] array, int left, int middle, int right) {
